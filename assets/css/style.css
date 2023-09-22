@@ -1,3 +1,21 @@
-body {
-    
+:root {
+    --bg-color: #2e2c2f;
+    --main-text-color: #b305da;
 }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+    padding: 10px auto;
+}
+
+header p {
+    color: #fff;
+    font-size: 75%;
+}
+
