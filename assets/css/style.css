@@ -87,8 +87,7 @@ article h2 {
   /* tablets up to 768px */
   @media screen and (max-width: 768px) {
     article {
-        flex: 1 0 33%;
-        min-width: 45%
+        flex: 1 0 50%;
       }
     
   }
@@ -96,8 +95,8 @@ article h2 {
   /* mobile*/
   @media screen and (max-width: 480px) {
     article {
-        /* flex: 1 0 43%; */
-        min-width: 90%
+        flex: 1 0 100%;
+        /* min-width: 90% */
       }
   }
   
