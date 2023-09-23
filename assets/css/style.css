@@ -90,18 +90,11 @@ footer {
 
 
 /* Responsive design */
-/* desktops */ 
-/* @media screen and (max-width: 1025px) {
-    article {
-      flex-basis: 30;
-      background-color: red;
-    }
-  } */
-  
+
   /* tablets up to 768px */
   @media screen and (max-width: 768px) {
     article {
-        flex: 1 0 50%;
+        flex: 1 0 35%;
       }
     
   }
@@ -110,7 +103,6 @@ footer {
   @media screen and (max-width: 480px) {
     article {
         flex: 1 0 100%;
-        /* min-width: 90% */
       }
   }
   
