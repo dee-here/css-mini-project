@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #2e2c2f;
+    --bg-color: #4d4a4d;
     --main-text-color: #b305da;
 }
 
@@ -21,15 +21,14 @@ header p {
 
 section.main-container {
     display: flex;
-    border: 1px solid red;
-    justify-content: space-around;
+    /* border: 1px solid red; */
+    justify-content: start;
     flex-wrap: wrap;
     padding: 10px;
 }
 
 section.main-container p {
     /* display: flex; */
-    border: 1px solid red;
     /* justify-content: space-around;
     flex-wrap: wrap; */
     text-align: left;
@@ -44,21 +43,26 @@ section.main-container section {
     padding: 5px;
     font-size: 90%;
     font-family: monospace;
-    background-image: linear-gradient(to bottom, rgb(101, 2, 94), var(--main-text-color));
+    background-image: linear-gradient(to bottom, rgb(55, 19, 52), var(--main-text-color));
     border-radius: 5px;
 }
 
 article {
-    border: 1.5px dotted white;
+    border: 1.5px dashed white;
     /* border-radius: 5%; */
     /* flex: 1 1 0; */
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
     /* min-height: 300px;
     text-align: left;
    
     /* width: 500px;
     height: 300px; */
     padding: 10px;
+    margin: 10px;
+    /* min-width: 30%; */
+    /* max-width: 30% */
+    flex: 1 0 23%;
+
 }
 
 article h2 {
@@ -69,3 +73,31 @@ article h2 {
     margin: 0px;
     /* padding: 10px; */
 }
+
+
+/* Responsive design */
+/* desktops */ 
+/* @media screen and (max-width: 1025px) {
+    article {
+      flex-basis: 30;
+      background-color: red;
+    }
+  } */
+  
+  /* tablets up to 768px */
+  @media screen and (max-width: 768px) {
+    article {
+        flex: 1 0 33%;
+        min-width: 45%
+      }
+    
+  }
+  
+  /* mobile*/
+  @media screen and (max-width: 480px) {
+    article {
+        /* flex: 1 0 43%; */
+        min-width: 90%
+      }
+  }
+  
